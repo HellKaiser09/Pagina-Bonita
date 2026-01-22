@@ -1,1 +1,195 @@
 
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { height: 100%; }
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #fdfbf7;
+  color: #333;
+  line-height: 1.6;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+main {
+  padding: 0 18px 60px;
+}
+
+/* ENCABEZADO */
+header {
+  background: #5A3A1E;
+  color: #fff;
+  text-align: center;
+  padding: 28px 16px;
+  margin: 18px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.06);
+}
+header h1 { font-size: 1.8rem; margin-bottom: 6px; }
+header p { font-weight: 600; opacity: 0.95; }
+
+/* COMO SE VE */
+nav {
+  background: #F5E6CC;
+  margin: 0 18px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+  overflow: hidden;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 8px;
+  padding: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+nav li { margin: 0; }
+nav a {
+  display: inline-block;
+  text-decoration: none;
+  color: #5A3A1E;
+  padding: 10px 14px;
+  font-weight: 700;
+  border-radius: 6px;
+  transition: background 0.18s, color 0.18s, transform 0.12s;
+  border: 1px solid rgba(217,179,130,0.25);
+}
+nav a:hover, nav a:focus {
+  background: #5A3A1E;
+  color: #F5E6CC;
+  transform: translateY(-2px);
+}
+
+
+section {
+  background: #fff;
+  padding: 22px;
+  margin: 20px auto;
+  max-width: 1000px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.04);
+  border-left: 5px solid #D9B382;
+}
+
+
+h2 {
+  color: #5A3A1E;
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid rgba(245,230,204,0.6);
+  font-size: 1.25rem;
+}
+h3 { color: #8B5E3C; margin-top: 10px; font-size: 1.05rem; }
+
+/* BANNER GG*/
+#banner-principal {
+  background: #D9B382;
+  color: #5A3A1E;
+  text-align: center;
+  padding: 30px 16px;
+  margin: 20px auto;
+  border-radius: 10px;
+  font-size: 1.12rem;
+  font-weight: 700;
+  border: 2px dashed #5A3A1E;
+  max-width: 1000px;
+}
+
+/* SECCION DE DESTACADO*/
+#destacados {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 16px;
+}
+
+/* ARTÍCULOS Y TARJETAS lol */
+main article,
+#destacados article {
+  background: #FFF0E1;
+  padding: 16px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.06);
+  border: 1px solid rgba(245,230,204,0.7);
+  transition: transform 0.22s ease, box-shadow 0.22s ease, background 0.22s;
+  margin-bottom: 8px;
+}
+main article:hover,
+#destacados article:hover {
+  transform: translateY(-6px);
+  background: #fff;
+  border-color: #5A3A1E;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+}
+
+/* LISTAS Y DEFINICIONES */
+dl dt { font-weight: 800; color: #5A3A1E; margin-top: 10px; }
+dl dd { margin-left: 8px; margin-bottom: 8px; color: #444; }
+
+/* TESTIMONIOS */
+blockquote {
+  border-left: 4px solid #D9B382;
+  padding: 12px 14px;
+  margin: 12px 0;
+  background: linear-gradient(90deg, rgba(255,240,225,0.6), rgba(255,255,255,0.02));
+  border-radius: 6px;
+}
+blockquote p { font-style: italic; color: #222; }
+blockquote footer { margin-top: 8px; color: #FFFFFF; }
+
+/* TABLAS HORARIOS (pues si verdad) */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  background: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+}
+th, td {
+  padding: 12px;
+  border-bottom: 1px solid rgba(217,179,130,0.25);
+  text-align: left;
+}
+thead th {
+  background: #5A3A1E;
+  color: #fff;
+  font-weight: 700;
+}
+
+/* ZONA DE DELIVERY */
+#zona-entrega ul { list-style: disc; padding-left: 20px; margin-top: 8px; }
+#zona-entrega li { margin: 6px 0; }
+
+/* FOOTER (lo que va abajo para los que no sepan ingles xd)*/
+footer {
+  background: #5A3A1E;
+  color: #F5E6CC;
+  text-align: center;
+  padding: 18px;
+  margin: 20px auto;
+  border-radius: 8px;
+  max-width: 1000px;
+}
+footer nav ul { display: flex; gap: 10px; justify-content: center; padding: 8px 0; flex-wrap: wrap; list-style: none; }
+footer a { color: #D9B382; text-decoration: none; font-weight: 700; }
+footer a:hover { text-decoration: underline; }
+
+/* RESPONSIVE BÁSICO */
+@media (max-width: 768px) {
+  header, nav, section, footer { margin-left: 12px; margin-right: 12px; }
+  nav ul { gap: 6px; }
+  #banner-principal { padding: 22px 12px; }
+  #destacados { grid-template-columns: 1fr; }
+  main article { margin-bottom: 12px; }
+}
+
+/* IMPRESIÓN */
+@media print {
+  nav, header, footer { display: none !important; }
+  body { background: #fff; color: #000; }
+  section { box-shadow: none; border-left: 4px solid #ccc; }
+}
