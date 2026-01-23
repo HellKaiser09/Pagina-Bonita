@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Las mejores empanadas artesanales - Repulgue tradicional e ingredientes de primera calidad">
+    <meta name="description"
+        content="Las mejores empanadas artesanales - Repulgue tradicional e ingredientes de primera calidad">
     <meta name="keywords" content="empanadas, artesanales, comida, delivery, empanadas caseras">
     <title>Empanadas Dorado - Las Mejores Empanadas Artesanales</title>
     <link rel="stylesheet" href="style/style.css">
+    <script src="script/script.js" defer></script>
 </head>
+
 <body>
     <header>
         <h1> Empanadas Dolado</h1>
@@ -35,29 +39,47 @@
         <section id="inicio">
             <article>
                 <h2>Bienvenidos a Empanadas Dolado</h2>
-                <p>Respetamos el ritual: repulgue artesanal, ingredientes de primera y nada de inventos raros. Nuestras empanadas son un viaje de ida; están tan jugosas que vas a tener que comerlas 'en el aire' para no mancharte las zapas.</p>
+                <p>Respetamos el ritual: repulgue artesanal, ingredientes de primera y nada de inventos raros. Nuestras
+                    empanadas son un viaje de ida; están tan jugosas que vas a tener que comerlas 'en el aire' para no
+                    mancharte las zapas.</p>
             </article>
         </section>
 
         <section id="destacados">
             <h2>Lo más pedido</h2>
-            <article>
-                <h3>Empanada de Carne</h3>
-                <p>Carne picada a cuchillo, cebolla, huevo, aceituna y comino</p>
-                <p>¡LA FAVORITA DE NUESTROS CLIENTES!</p>
-            </article>
+            <div class="grid-container">
+                <article class="card">
+                    <div class="card-image"
+                        style="background-image: url('imagenes/12072023-empanadas-argentinas-de-sabores-express-BUHGBZQ5FVAITHTZSF3WOFNTFA.avif');">
+                    </div>
+                    <div class="card-content">
+                        <h3>Empanada de Carne</h3>
+                        <p>Carne picada a cuchillo, cebolla, huevo, aceituna y comino</p>
+                        <p class="highlight">¡LA FAVORITA!</p>
+                    </div>
+                </article>
 
-            <article>
-                <h3>Empanada de Pollo</h3>
-                <p>Pollo desmenuzado, cebolla de verdeo, morrones y crema</p>
-                <p><em>Especial para los que quieren algo más suave</em></p>
-            </article>
+                <article class="card">
+                    <div class="card-image"
+                        style="background-image: url('imagenes/iStock-1437638745-Empanadas-de-pollo-scaled.jpg');">
+                    </div>
+                    <div class="card-content">
+                        <h3>Empanada de Pollo</h3>
+                        <p>Pollo desmenuzado, cebolla de verdeo, morrones y crema</p>
+                        <p><em>Muy suave</em></p>
+                    </div>
+                </article>
 
-            <article>
-                <h3>Empanada Caprese</h3>
-                <p>Tomate, mozzarella, albahaca fresca y aceite de oliva</p>
-                <p><strong>OPCIÓN VEGETARIANA</strong></p>
-            </article>
+                <article class="card">
+                    <div class="card-image"
+                        style="background-image: url('imagenes/empanada-de-IWWICY2OKVGGNMBMM6QB5LMQFY.avif');"></div>
+                    <div class="card-content">
+                        <h3>Empanada Caprese</h3>
+                        <p>Tomate, mozzarella, albahaca fresca y aceite de oliva</p>
+                        <p><strong>VEGETARIANA</strong></p>
+                    </div>
+                </article>
+            </div>
         </section>
 
         <section id="por-que-elegirnos">
@@ -139,27 +161,41 @@
             <p><em>¿Estás en otra zona? ¡Consultanos! Podemos hacer excepciones para pedidos grandes</em></p>
         </section>
 
-    <footer>
-        <h3>Empanadas Dolado</h3>
-        <p><strong>Las mejores empanadas artesanales de la ciudad</strong></p>
-        <hr>
-        <nav>
-            <ul>
-                <li><a href="pages/Menu-salado.html">Menú Salado</a></li>
-                <li><a href="pages/Menu-dulce.html">Menú Dulce</a></li>
-                <li><a href="pages/Nosotros.html">Nuestra Historia</a></li>
-                <li><a href="pages/Contactos.html">Contacto</a></li>
-            </ul>
-        </nav>
-        <hr>
-        <address>
-            <p><strong>Dirección:</strong> Av. Corrientes 1234, CABA, Argentina</p>
-            <p><strong>Teléfono:</strong> (011) 4567-8901</p>
-            <p><strong>Email:</strong> info@empanadasdorado.com</p>
-        </address>
-        <hr>
-        <p><small>&copy; 2026 Empanadas Dolado. Todos los derechos reservados.</small></p>
-        <p><small>Hecho con  y mucha harina</small></p>
-    </footer>
+        <footer>
+            <h3>Empanadas Dolado</h3>
+            <p><strong>Las mejores empanadas artesanales de la ciudad</strong></p>
+            <hr>
+            <nav>
+                <ul>
+                    <li><a href="pages/Menu-salado.html">Menú Salado</a></li>
+                    <li><a href="pages/Menu-dulce.html">Menú Dulce</a></li>
+                    <li><a href="pages/Nosotros.html">Nuestra Historia</a></li>
+                    <li><a href="pages/Contactos.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <hr>
+            <address>
+                <p><strong>Dirección:</strong> Av. Corrientes 1234, CABA, Argentina</p>
+                <p><strong>Teléfono:</strong> (011) 4567-8901</p>
+                <p><strong>Email:</strong> info@empanadasdorado.com</p>
+            </address>
+            <hr>
+            <p><small>&copy; 2026 Empanadas Dolado. Todos los derechos reservados.</small></p>
+            <p><small>Hecho con y mucha harina</small></p>
+        </footer>
+        <!-- Modal de Producto -->
+        <div id="product-modal" class="modal hidden">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <div class="modal-body">
+                    <div class="modal-image"></div>
+                    <h2>Nombre del Producto</h2>
+                    <p class="modal-desc">Descripción del producto...</p>
+                    <button class="botonwe" id="modal-order-btn">¡Pedir Ya!</button>
+                </div>
+            </div>
+        </div>
+
 </body>
+
 </html>
