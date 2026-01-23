@@ -10,8 +10,12 @@ body {
 }
 
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background: #fdfbf7;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff8eb;
+  background-image: linear-gradient(rgb(255, 248, 235), rgba(255, 248, 235, 0.919)), url('../imagenes/fondo_empanadas.png');
+  background-repeat: repeat;
+  background-size: 300px;
+  background-attachment: fixed;
   color: #333;
   line-height: 1.6;
   font-size: 16px;
@@ -48,7 +52,7 @@ nav {
   background: #F5E6CC;
   margin: 0 18px;
   border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 2px 6px #0000000a;
   overflow: hidden;
 }
 
@@ -63,6 +67,7 @@ nav ul {
 
 nav li {
   margin: 0;
+
 }
 
 nav a {
@@ -73,12 +78,13 @@ nav a {
   font-weight: 700;
   border-radius: 6px;
   transition: background 0.18s, color 0.18s, transform 0.12s;
-  border: 1px solid rgba(217, 179, 130, 0.25);
+  border: 1px solid rgb(90, 58, 30);
 }
 
 nav a:hover,
 nav a:focus {
   background: #5A3A1E;
+  border: 1px solid #fff4e7;
   color: #F5E6CC;
   transform: translateY(-2px);
 }
@@ -248,9 +254,9 @@ footer {
   color: #fff;
   text-align: center;
   padding: 18px;
-  margin: 20px auto;
+  margin: 18px auto;
   border-radius: 8px;
-  max-width: 1000px;
+  max-width: 2000px;
 }
 
 footer nav ul {
@@ -273,10 +279,25 @@ footer a:hover {
 }
 
 .divPDG {
-  padding-bottom: 20px;
+  padding-block: 10px 10px;
 }
 
-@media (max-width: 768px) {
+.divFOT ul {
+  background-color: #F5E6CC;
+  gap: 20px;
+}
+
+.divFOT nav {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.divlinea {
+  border: 1px solid #F5E6CC;
+  margin: 18px auto;
+}
+
+@media (max-width: 700px) {
 
   header,
   nav,
