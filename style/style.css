@@ -109,6 +109,10 @@ h3 {
   font-size: 1.05rem;
 }
 
+.textobro {
+  color: #fff;
+}
+
 .listado {
   list-style: none;
 }
@@ -241,7 +245,7 @@ thead th {
 
 footer {
   background: #5A3A1E;
-  color: #F5E6CC;
+  color: #fff;
   text-align: center;
   padding: 18px;
   margin: 20px auto;
@@ -259,13 +263,17 @@ footer nav ul {
 }
 
 footer a {
-  color: #D9B382;
+  color: #5A3A1E;
   text-decoration: none;
   font-weight: 700;
 }
 
 footer a:hover {
   text-decoration: none;
+}
+
+.divPDG {
+  padding-bottom: 20px;
 }
 
 @media (max-width: 768px) {
