@@ -14,7 +14,7 @@ body {
 
 
 main {
-  padding: 0 18px 60px;
+  padding: 0 18px 20px;
 }
 
 /* ENCABEZADO */
@@ -83,6 +83,35 @@ h2 {
   font-size: 1.25rem;
 }
 h3 { color: #8B5E3C; margin-top: 10px; font-size: 1.05rem; }
+
+.listado {
+  list-style: none;
+}
+
+.botones-we {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.botonwe {
+  display: inline-block;
+  border: none;
+  background-color: #5A3A1E;
+  width: fit-content;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.18s, color 0.18s, transform 0.12s;
+  padding: 0.7rem 1.5rem;
+}
+
+.botonwe:hover {
+  background-color: #8B5E3C;
+  color: white;
+  transform: translateY(-3px);
+}
 
 /* BANNER GG*/
 #banner-principal {
@@ -176,7 +205,7 @@ footer {
 }
 footer nav ul { display: flex; gap: 10px; justify-content: center; padding: 8px 0; flex-wrap: wrap; list-style: none; }
 footer a { color: #D9B382; text-decoration: none; font-weight: 700; }
-footer a:hover { text-decoration: underline; }
+footer a:hover { text-decoration: none; }
 
 /* RESPONSIVE BÁSICO */
 @media (max-width: 768px) {
