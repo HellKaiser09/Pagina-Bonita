@@ -1,13 +1,8 @@
-// Script para Empanadas Dolado
-
 document.addEventListener('DOMContentLoaded', () => {
-    // 1. Welcome Toast
     showWelcomeToast();
 
-    // 2. Highlight Table Row
     highlightCurrentDay();
 
-    // 3. Smooth Scroll
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
@@ -23,26 +18,22 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // 4. Product Modal Logic
     setupProductModal();
 });
 
 function showWelcomeToast() {
-    // Crear elemento toast dinámicamente
     const toast = document.createElement('div');
     toast.className = 'toast-welcome';
     toast.innerText = '¡Bienvenido a Empanadas Dolado!';
     document.body.appendChild(toast);
 
-    // Mostrar con animación
     setTimeout(() => {
         toast.classList.add('show');
     }, 100);
 
-    // Ocultar después de 4 segundos
     setTimeout(() => {
         toast.classList.remove('show');
-        // Eliminar del DOM después de la transición
+
         setTimeout(() => toast.remove(), 600);
     }, 4000);
 }
@@ -71,7 +62,6 @@ function setupProductModal() {
     const modalDesc = document.querySelector('.modal-desc');
     const cards = document.querySelectorAll('#destacados .card');
 
-    // Data real con imágenes
     const products = [
         {
             title: "Empanada de Carne",
@@ -96,26 +86,25 @@ function setupProductModal() {
             if (products[index]) {
                 const p = products[index];
 
-                // Actualizar contenido del modal
+        
                 modalTitle.innerText = p.title;
                 modalDesc.innerText = p.desc;
 
-                // Actualizar imagen
+        
                 modalImage.style.backgroundImage = `url('${p.imgUrl}')`;
-                modalImage.className = 'modal-image'; // Reset classes
+                modalImage.className = 'modal-image'
 
-                // Mostrar modal
+        
                 modal.classList.remove('hidden');
             }
         });
     });
 
-    // Cerrar modal con botón X
+    
     closeBtn.addEventListener('click', () => {
         modal.classList.add('hidden');
     });
 
-    // Cerrar modal con click afuera
     window.addEventListener('click', (e) => {
         if (e.target === modal) {
             modal.classList.add('hidden');
